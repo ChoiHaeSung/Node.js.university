@@ -1,0 +1,57 @@
+/* 상단바 박스 */
+#container{
+  width: 100%;
+  height: 100px;
+}
+/* 상단바 이름 */
+h1{
+  margin-top: 200px;
+  text-align: center;
+  font-size: 50px;
+  font-style: oblique;
+}
+/* 아이디 비밀번호 박스 */
+.i{
+  border: 1px solid #dbdbdb;
+  outline: none;
+
+  width: 245px;
+  height: 100px;
+  margin-top: 100px auto  ;
+  text-align: center;
+  cursor: pointer; /*터치시 포인터로 변환*/
+}
+.i:focus{
+  box-shadow: 0px 0px 10px 1px #dbdbdb;
+}
+/* 로그인 로그아웃 회원가입 박스 */
+.but{
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  width: 250px;
+  height: 50px;
+  background-color: #0000004d;
+
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;   
+}
+/* 박스 클릭시 반응하는 모션 */
+.but:active{
+  background-color: #303030;
+  box-shadow: 0px 0px 10px 1px #dbdbdb;
+}
+
+.box{
+  /* margin-top: 200px; */
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  height: 200px;
+  align-items: center;
+}
+.section{
+  width: 50px;
+  height: 150px;  
+}
