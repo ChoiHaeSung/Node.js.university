@@ -8,7 +8,8 @@ app.set("views","./views");
 const port = 3000;
 
 dbConnect();
-
+// load public files
+app.use(express.static("./public"));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 

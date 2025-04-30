@@ -1,13 +1,12 @@
 const asyncHandler = require("express-async-handler");
 const Contact = require("../models/contactModel");
-const path = require("path");
+
 // @desc Get all contacts
 // @route GET /contacts
 const getAllContacts = asyncHandler(async (req, res) => {
   try{
     const contacts = await Contact.find();
-    const filePath=path.join(__dirname, "../assets", "getAll.html");
-    res.sendFile(filePath);
+   res.render("index", {contacts: contacts});
   }catch(error){
     res.send(error.message);
   }
