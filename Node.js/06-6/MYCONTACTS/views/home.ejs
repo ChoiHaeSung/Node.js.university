@@ -1,6 +1,6 @@
-  <!-- Header -->
-  <%- include('./include/_header')%>
-  <!-- /Header -->
+<!-- include  header -->
+<%- include('./include/_header') %>
+<!-- /include header -->
 
   <!-- Main -->
   <main id="site-main">
@@ -9,7 +9,7 @@
       <h3>로그인</h3>     
       <p>로그인이 필요한 서비스입니다.</p>
 
-      <form class="login">
+      <form action="/" method="POST" class="login">
         <label for="username"><b>Username</b></label>
         <input type="text" placeholder="사용자 아이디" name="username" id="username">
         <label for="password"><b>Password</b></label>
@@ -20,8 +20,7 @@
     </div>
   </main>
   <!-- /Main -->
-
-  <!-- include footer -->
-  <%- include('./include/_footer')%>
-  <!-- include footer -->
-
+   
+<!-- include footer -->
+<%- include('./include/_footer') %>
+<!-- /include footer -->
